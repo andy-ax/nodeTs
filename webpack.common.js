@@ -1,8 +1,8 @@
 const path = require('path');
 const merge = require('webpack-merge').merge;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const MiniCssPlugin = require("mini-css-extract-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssPlugin = require('mini-css-extract-plugin');
 
 const type = process.env.npm_lifecycle_event;
 const events = {
@@ -20,7 +20,7 @@ let output = {
 output = merge(output, events[type]);
 
 module.exports = {
-    entry: './src/index.ts',
+    entry: './src/main.ts',
     devtool: 'inline-source-map',
     module: {
         rules: [
