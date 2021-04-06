@@ -71,4 +71,30 @@ export class RouterHelper {
             replaceRegExp: replaceRegExp
         });
     }
+
+    checkPath(req: Request, pathname: string) {
+        let route,
+            i,
+            len,
+            result,
+            args,
+            type = req.method;
+
+        for (i = 0,len = this.routes[type].length; i < len; i++) {
+            route = this.routes[type][i];
+            result = route.path.exec(pathname);
+            if (result) {
+                route.path.lastIndex = 0;
+                result.shift();
+                //将req,res与匹配项叠加
+                args = [].concat(result);
+
+                return {
+                    action: route.action,
+                    args: args
+                };
+            }
+        }
+        return false;
+    };
 }
