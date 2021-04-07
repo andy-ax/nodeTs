@@ -1,11 +1,19 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "noImplicitAny": true,
-    "sourceMap": true,
-    "module": "es6",
-    "target": "es6",
-    "jsx": "react",
-    "allowJs": true
-  }
+    "target": "es2018",
+    "module": "commonjs",
+    "outDir": "./build",
+    "strict": true,
+    "rootDirs": ["./src"],
+    "typeRoots": [
+      "node_modules/@typings"
+    ],
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include":[
+    "./src/**/*"
+  ]
 }
