@@ -1,10 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  *
  */
 // import {http} from './node-base'
 const http = require('http');
 // import http from '@types'
-import { PORT, URL } from  './model/model';
+const model_1 = require("./model/model");
 // import { parse } from './utils/utils';
 // import {
 //     Router,
@@ -12,7 +14,6 @@ import { PORT, URL } from  './model/model';
 //     Handle404,
 //     CookieSession,
 // } from './app';
-
 class Main {
     // router: Router;
     // cookie: Cookie;
@@ -20,19 +21,15 @@ class Main {
         // this.router = new Router();
         this.init();
     }
-
     init() {
         http.createServer(this.httpRequest.bind(this))
-            .listen(PORT, URL, this.httpConnect.bind(this));
-
+            .listen(model_1.PORT, model_1.URL, this.httpConnect.bind(this));
         // cookie & session config
         // CookieSession.config();
-
         //route map & follow-up actions
         // new Router();
     }
-
-    httpRequest(request:Request, response:Response) {
+    httpRequest(request, response) {
         // const urlObj = (request as any).urlObj = parse(request.url);
         // const result = this.router.checkPath(request, urlObj.pathname);
         // if (result) {
@@ -43,10 +40,9 @@ class Main {
         //     Handle404.handle404(response);
         // }
     }
-
     httpConnect() {
-        console.log('connection is success!')
+        console.log('connection is success!');
     }
 }
-
 new Main();
+//# sourceMappingURL=main.js.map

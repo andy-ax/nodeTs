@@ -1,6 +1,6 @@
 import {Session} from "./session";
 import {Cookie} from "./cookie";
-import {URL} from '../../model/model'
+import {URL} from '../model/model'
 
 export class CookieSession {
     static cookieExpire = 1000 * 60 * 60 * 24 * 30;
@@ -14,7 +14,7 @@ export class CookieSession {
             httpOnly: true,
         });
         Session.configExpires(this.sessionExpire);
-        Cookie.cookieConfig('isVisit', (self: Cookie) => {
+        Cookie.cookieConfig('isVisit', (self: any) => {
             const visitTime = parseInt(self.req.cookie.isVisit);
             self.cookie.push(
                 Cookie.buildCookie('isVisit', visitTime+1)

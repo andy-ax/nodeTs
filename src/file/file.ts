@@ -1,5 +1,6 @@
-// const fs = require('fs');
-import fs from 'node/fs';
+const fs = require('fs');
+// import fs from 'node/fs';
+const buffer = require('buffer');
 import {insertBuffer, array2Buffer} from './buffer'
 import {FileError} from './fileError';
 
@@ -108,9 +109,9 @@ export class File {
     static addTextToFile(path: string, text: string, start: number, encode?: string): Promise<void> {
         return new Promise<void>((res, rej) => {
             encode = encode || 'utf-8';
-            let buffers: Buffer[] = [];
+            let buffers:any [] = [];
             fs.createReadStream(path)
-                .on('data', (buf: Buffer) => {
+                .on('data', (buf: any) => {
                     buffers.push(buf);
                 })
                 .on('end', function () {
