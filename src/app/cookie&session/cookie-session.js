@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CookieSession = void 0;
 const session_1 = require("./session");
 const cookie_1 = require("./cookie");
-const model_1 = require("../model/model");
+const model_1 = require("../../model/model");
 class CookieSession {
     static config() {
         cookie_1.Cookie.setOption({

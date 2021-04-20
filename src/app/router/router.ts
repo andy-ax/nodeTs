@@ -22,7 +22,7 @@ export class Router extends RouterHelper{
 
     getRouter() {
         //加载主页
-        this.get('/', function (req: any, res: any) {
+        this.get('/', function (req: Request, res: Response) {
             const cookie = new Cookie(req, res);
             cookie.checkAllCookie();
             File.readFile('./src/assets/index.html').then(file => {

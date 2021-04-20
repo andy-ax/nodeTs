@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "tsc",
     "watch": "webpack --watch",
     "start": "http-server dist",
     "dev": "webpack-dev-server --open --config webpack.dev.js"
