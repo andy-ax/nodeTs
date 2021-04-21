@@ -27,7 +27,7 @@ class Cookie {
      * @param fail
      */
     checkCookie(key, success, fail) {
-        if (this.req.cookie[key] !== undefined) {
+        if (this.req.mount.cookie[key] !== undefined) {
             success(this);
         }
         else {

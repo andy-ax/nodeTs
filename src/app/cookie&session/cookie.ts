@@ -47,7 +47,7 @@ export class Cookie {
      * @param fail
      */
     checkCookie(key: string, success: Function, fail: Function) {
-        if (this.req.cookie[key] !== undefined) {
+        if (this.req.mount.cookie[key] !== undefined) {
             success(this);
         } else {
             fail(this);

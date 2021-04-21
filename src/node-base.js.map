@@ -1,1 +1,0 @@
-{"version":3,"file":"node-base.js","sourceRoot":"","sources":["node-base.ts"],"names":[],"mappings":";;;AAAa,QAAA,IAAI,GAAQ,EAAE,CAAC","sourcesContent":["export const http: any = {};"]}

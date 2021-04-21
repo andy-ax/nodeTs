@@ -2,14 +2,9 @@
  *
  */
 const http = require('http');
-import { PORT, URL } from  './model/model';
-import { parse } from './utils/utils';
-import {
-    Router,
-    Cookie,
-    Handle404,
-    CookieSession,
-} from './app';
+import {PORT, URL} from './model/model';
+import {parse} from './utils/utils';
+import {Cookie, CookieSession, Handle404, Router,} from './app';
 
 class Main {
     router: Router;
@@ -33,10 +28,9 @@ class Main {
     httpRequest(request:Request, response:Response) {
         const urlObj = parse(request.url);
         const result = this.router.checkPath(request, urlObj.pathname);
-        console.log(request);
+        request.mount = {};
         if (result) {
-            const cookie = Cookie.parseCookie(request.headers.cookie);
-
+            request.mount.cookie = Cookie.parseCookie(request.headers.cookie);
             result.action(request, response, ...result.args);
         } else {
             Handle404.handle404(response);

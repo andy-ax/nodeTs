@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "build": "tsc",
-    "watch": "webpack --watch",
-    "start": "http-server dist",
+    "watch": "tsc --watch",
+    "test": "node --inspect ./src/main.js",
     "dev": "webpack-dev-server --open --config webpack.dev.js"
   },
   "keywords": [],

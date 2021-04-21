@@ -24,9 +24,9 @@ class Main {
     httpRequest(request, response) {
         const urlObj = utils_1.parse(request.url);
         const result = this.router.checkPath(request, urlObj.pathname);
-        console.log(request);
+        request.mount = {};
         if (result) {
-            // const cookie = Cookie.parseCookie(request.headers.cookie);
+            request.mount.cookie = app_1.Cookie.parseCookie(request.headers.cookie);
             result.action(request, response, ...result.args);
         }
         else {
