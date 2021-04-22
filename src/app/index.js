@@ -16,4 +16,5 @@ __exportStar(require("./file/file"), exports);
 __exportStar(require("./cookie&session/cookie"), exports);
 __exportStar(require("./cookie&session/cookie-session"), exports);
 __exportStar(require("./cookie&session/session"), exports);
+__exportStar(require("./cache/cache"), exports);
 //# sourceMappingURL=index.js.map

@@ -23,26 +23,31 @@ class Cookie {
     /**
      * 检查设定的cookie是否存在
      * @param key
-     * @param success
-     * @param fail
      */
-    checkCookie(key, success, fail) {
-        if (this.req.mount.cookie[key] !== undefined) {
-            success(this);
-        }
-        else {
-            fail(this);
-        }
+    checkCookie(key) {
+        return new Promise((resolve, reject) => {
+            if (this.req.mount.cookie[key] !== undefined) {
+                resolve(this);
+            }
+            else {
+                reject(this);
+            }
+        });
     }
     /**
      * 检查全部 cookie
      */
     checkAllCookie() {
-        let success, fail;
+        let success;
+        let fail;
         for (let i in Cookie.cookies) {
             success = Cookie.cookies[i].success;
             fail = Cookie.cookies[i].fail;
-            this.checkCookie(i, success, fail);
+            this.checkCookie(i).then(self => {
+                success(self);
+            }).catch(self => {
+                fail(self);
+            });
         }
     }
     /**

@@ -17,7 +17,7 @@ export declare class Cookie {
     req: any;
     res: any;
     cookie: any[];
-    constructor(req: any, res: any);
+    constructor(req: Request, res: Response);
     /**
      * 设置cookie头
      */
@@ -25,10 +25,8 @@ export declare class Cookie {
     /**
      * 检查设定的cookie是否存在
      * @param key
-     * @param success
-     * @param fail
      */
-    checkCookie(key: string, success: Function, fail: Function): void;
+    checkCookie(key: string): Promise<unknown>;
     /**
      * 检查全部 cookie
      */

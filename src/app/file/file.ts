@@ -49,7 +49,7 @@ export class File {
      */
     static readFileMsg(filePath: string): Promise<any> {
         return new Promise((res, rej) => {
-            fs.stat(filePath, function (err: Error, stat: any) {
+            fs.stat(filePath, function (err: Error, stat: File) {
                 if (err) {
                     rej(err);
                 } else {

@@ -28,10 +28,8 @@ export declare class Session {
     /**
      * 检查session是否存在，并判断是否超时，如未超时则更新超时时间并成功返回
      * @param {string} s_id
-     * @param {function} [success]
-     * @param {function} [fail]
      */
-    static checkSession(s_id: string, success: Function, fail: Function): void;
+    static checkSession(s_id: string): Promise<unknown>;
     private static generateSId;
     private static setExpiresTime;
 }

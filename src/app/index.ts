@@ -4,3 +4,4 @@ export * from './file/file';
 export * from './cookie&session/cookie';
 export * from './cookie&session/cookie-session';
 export * from './cookie&session/session';
+export * from './cache/cache';

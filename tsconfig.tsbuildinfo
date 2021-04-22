@@ -27,8 +27,8 @@
         "affectsGlobalScope": false
       },
       "./node_modules/_typescript@4.2.4@typescript/lib/lib.dom.d.ts": {
-        "version": "e913f0aa86ac033d55c5ba079e2519e91129a6f43b0801e87a45c3fa866a51d5",
-        "signature": "e913f0aa86ac033d55c5ba079e2519e91129a6f43b0801e87a45c3fa866a51d5",
+        "version": "4576985995178527b80ad6b4e8dffdcc1d6a755c6b9baad392d17770302d9cd5",
+        "signature": "4576985995178527b80ad6b4e8dffdcc1d6a755c6b9baad392d17770302d9cd5",
         "affectsGlobalScope": true
       },
       "./node_modules/_typescript@4.2.4@typescript/lib/lib.es2015.core.d.ts": {
@@ -147,8 +147,8 @@
         "affectsGlobalScope": false
       },
       "./src/model/model.ts": {
-        "version": "615be8ac49f06cbd1011a6afbb734e74d1fe4b7c6cc8ab4cde7a87c58582d126",
-        "signature": "60ff3c0e5102dc714fac4532a61837ec92ed4349a75822df00061e03c17bc744",
+        "version": "ec2ce1d35db53708bde9b75b48bf01fd6d593268b7f200958d135c401253a56a",
+        "signature": "e8f8c103ca17155fdcb49c35f04ca7d420352fb52d4e316cba2154ecdd0cce9e",
         "affectsGlobalScope": false
       },
       "./src/utils/utils.ts": {
@@ -161,9 +161,14 @@
         "signature": "8b7cfef894ebddb5a1c8c255b6e01c642513cfa8e9aa52d76bec59ad9eb052a9",
         "affectsGlobalScope": false
       },
-      "./src/app/cookie&session/cookie.ts": {
-        "version": "ff6bf5df8a3054a2459ea4c26a1d90fe7e50574e983bcab283803daf89960347",
-        "signature": "f235ae60e8a95b8db528598a646c83907da5fc3c51536fa7fdd66ccc64321c17",
+      "./src/app/router/router.ts": {
+        "version": "9916e695dcd623dc65333f311907efbffae3c8c765472b535f4d48788c229c3b",
+        "signature": "3f69a12ae29c2acc15c48937d236dc9638bf9aa9351e7b3fbd2ef686c58e1bad",
+        "affectsGlobalScope": false
+      },
+      "./src/app/handle404/handle404.ts": {
+        "version": "fd47f25d019da0588c16788285f6a825e5e7016c42508ed51d3d0a24700ec243",
+        "signature": "18b2225ec77f5ef2cf96794279c047ae9358017225b6031207e39a18b2b8b396",
         "affectsGlobalScope": false
       },
       "./src/app/file/buffer.ts": {
@@ -177,23 +182,18 @@
         "affectsGlobalScope": false
       },
       "./src/app/file/file.ts": {
-        "version": "381cb650889e9140f7ceb5d2d7e819a44e273095895d79ef99d62136469f1d4c",
+        "version": "7ff4260c32d1e4a10e923c1f992bd02617046c732b67b7e56cce16d2c5e96dc0",
         "signature": "cf6bb55d2e858c8cbf79cbad8d4000bbe2979273d1b7164468ad64742e2ca4fc",
         "affectsGlobalScope": false
       },
-      "./src/app/handle404/handle404.ts": {
-        "version": "fd47f25d019da0588c16788285f6a825e5e7016c42508ed51d3d0a24700ec243",
-        "signature": "18b2225ec77f5ef2cf96794279c047ae9358017225b6031207e39a18b2b8b396",
-        "affectsGlobalScope": false
-      },
-      "./src/app/router/router.ts": {
-        "version": "b1d7b50861a3b452b3b5e91e67e05b380e2fea33810b84d8ce432824e264bb4e",
-        "signature": "3f69a12ae29c2acc15c48937d236dc9638bf9aa9351e7b3fbd2ef686c58e1bad",
+      "./src/app/cookie&session/cookie.ts": {
+        "version": "9753706fc59e0fe2c288e1356facfab02d60a80b364b3814ebd6be7b7fe46f67",
+        "signature": "4332a33bff51cf5d637c08bd59c50257c42a62e938c0617982f279de71f95273",
         "affectsGlobalScope": false
       },
       "./src/app/cookie&session/session.ts": {
-        "version": "2619d428dd83c7f7ba72f2b00e777f9f9228025988722d31b061060d521732cd",
-        "signature": "6a5c186bd0507c1d8a8c578fddef394f8120133b633759181bd43a446faff2c0",
+        "version": "869f6c5ac3300821a56c4cdc95ab1b2712f01ff81915e2d430de56a688203e60",
+        "signature": "9bca2d09d4278785a03ce3f500cab81026d8288e0191c54ab16f4814aea514de",
         "affectsGlobalScope": false
       },
       "./src/app/cookie&session/cookie-session.ts": {
@@ -201,9 +201,14 @@
         "signature": "637135765841dcaac22311c5b8c292236a2b734a16e3fcadcdb1528f03bf8a18",
         "affectsGlobalScope": false
       },
+      "./src/app/cache/cache.ts": {
+        "version": "138a43410964649ecf2c16783b733816a215802564bb7012d3b5301d9b8864f1",
+        "signature": "82bc5f2de86e566dad6fe5c5f45522aef26ed73d6d5fc69729958582c9a727f3",
+        "affectsGlobalScope": false
+      },
       "./src/app/index.ts": {
-        "version": "6ee061483b187d3de91b9b3c0132e78a067d7a3fa189134d43a1e6c57625cca9",
-        "signature": "6ee061483b187d3de91b9b3c0132e78a067d7a3fa189134d43a1e6c57625cca9",
+        "version": "67e5de334216e5f1c8320977e1c35a77ac9d4580f313f153df6c794c01c7a817",
+        "signature": "67e5de334216e5f1c8320977e1c35a77ac9d4580f313f153df6c794c01c7a817",
         "affectsGlobalScope": false
       },
       "./src/main.ts": {
@@ -695,6 +700,9 @@
         "./node_modules/_@types_node@14.14.41@@types/node/stream.d.ts",
         "./node_modules/_@types_node@14.14.41@@types/node/zlib.d.ts"
       ],
+      "./src/app/cache/cache.ts": [
+        "./src/app/index.ts"
+      ],
       "./src/app/cookie&session/cookie-session.ts": [
         "./src/app/cookie&session/cookie.ts",
         "./src/app/cookie&session/session.ts",
@@ -708,6 +716,7 @@
         "./src/app/file/fileerror.ts"
       ],
       "./src/app/index.ts": [
+        "./src/app/cache/cache.ts",
         "./src/app/cookie&session/cookie-session.ts",
         "./src/app/cookie&session/cookie.ts",
         "./src/app/cookie&session/session.ts",
@@ -716,9 +725,7 @@
         "./src/app/router/router.ts"
       ],
       "./src/app/router/router.ts": [
-        "./src/app/cookie&session/cookie.ts",
-        "./src/app/file/file.ts",
-        "./src/app/handle404/handle404.ts",
+        "./src/app/index.ts",
         "./src/app/router/routerhelper.ts"
       ],
       "./src/main.ts": [
@@ -957,6 +964,7 @@
         "./node_modules/_@types_node@14.14.41@@types/node/zlib.d.ts"
       ],
       "./src/app/index.ts": [
+        "./src/app/cache/cache.ts",
         "./src/app/cookie&session/cookie-session.ts",
         "./src/app/cookie&session/cookie.ts",
         "./src/app/cookie&session/session.ts",
@@ -1043,6 +1051,7 @@
       "./node_modules/_typescript@4.2.4@typescript/lib/lib.es2020.bigint.d.ts",
       "./node_modules/_typescript@4.2.4@typescript/lib/lib.es5.d.ts",
       "./node_modules/_typescript@4.2.4@typescript/lib/lib.esnext.intl.d.ts",
+      "./src/app/cache/cache.ts",
       "./src/app/cookie&session/cookie-session.ts",
       "./src/app/cookie&session/cookie.ts",
       "./src/app/cookie&session/session.ts",

@@ -47,23 +47,23 @@ export class Session {
     /**
      * 检查session是否存在，并判断是否超时，如未超时则更新超时时间并成功返回
      * @param {string} s_id
-     * @param {function} [success]
-     * @param {function} [fail]
      */
-    static checkSession(s_id: string, success: Function, fail: Function) {
-        const session = Session.sessions[s_id];
-        if (session) {
-            const date = (new Date).valueOf();
-            if (session.cookie.expire > date) {
-                session.cookie.expire = date + Session.EXPIRES;
-                success(session);
+    static checkSession(s_id: string) {
+        return new Promise((resolve, reject) => {
+            const session = Session.sessions[s_id];
+            if (session) {
+                const date = (new Date).valueOf();
+                if (session.cookie.expire > date) {
+                    session.cookie.expire = date + Session.EXPIRES;
+                    resolve(session);
+                } else {
+                    delete Session.sessions[s_id];
+                    reject();
+                }
             } else {
-                delete Session.sessions[s_id];
-                fail();
+                reject();
             }
-        } else {
-            fail();
-        }
+        });
     }
 
     private static generateSId() {
