@@ -35,4 +35,5 @@ export declare class File {
      * @param encode
      */
     static addTextToFile(path: string, text: string, start: number, encode?: string): Promise<void>;
+    static getRequestData(req: Request): Promise<unknown>;
 }

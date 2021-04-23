@@ -10,10 +10,5 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(require("./router/router"), exports);
-__exportStar(require("./handle404/handle404"), exports);
-__exportStar(require("./file/file"), exports);
-__exportStar(require("./cookie&session/cookie"), exports);
-__exportStar(require("./cookie&session/cookie-session"), exports);
-__exportStar(require("./cookie&session/session"), exports);
+__exportStar(require("./user"), exports);
 //# sourceMappingURL=index.js.map

@@ -27,8 +27,8 @@
         "affectsGlobalScope": false
       },
       "./node_modules/_typescript@4.2.4@typescript/lib/lib.dom.d.ts": {
-        "version": "4576985995178527b80ad6b4e8dffdcc1d6a755c6b9baad392d17770302d9cd5",
-        "signature": "4576985995178527b80ad6b4e8dffdcc1d6a755c6b9baad392d17770302d9cd5",
+        "version": "a70c47fc8efdff4df1d313ed9fa28d259a69a55751547def697fa4cabc47911f",
+        "signature": "a70c47fc8efdff4df1d313ed9fa28d259a69a55751547def697fa4cabc47911f",
         "affectsGlobalScope": true
       },
       "./node_modules/_typescript@4.2.4@typescript/lib/lib.es2015.core.d.ts": {
@@ -141,14 +141,9 @@
         "signature": "506b80b9951c9381dc5f11897b31fca5e2a65731d96ddefa19687fbc26b23c6e",
         "affectsGlobalScope": true
       },
-      "./src/index.d.ts": {
-        "version": "6ee061483b187d3de91b9b3c0132e78a067d7a3fa189134d43a1e6c57625cca9",
-        "signature": "6ee061483b187d3de91b9b3c0132e78a067d7a3fa189134d43a1e6c57625cca9",
-        "affectsGlobalScope": false
-      },
       "./src/model/model.ts": {
-        "version": "ec2ce1d35db53708bde9b75b48bf01fd6d593268b7f200958d135c401253a56a",
-        "signature": "e8f8c103ca17155fdcb49c35f04ca7d420352fb52d4e316cba2154ecdd0cce9e",
+        "version": "3e33e203d1ee5e228077d6b0d63f3bb883c0aff01e1a643a6d5c75ce2849200d",
+        "signature": "8b9c300cdc3918b1534acd9cc4e235edaca9a4caab72aac1faace9b339c7c0e7",
         "affectsGlobalScope": false
       },
       "./src/utils/utils.ts": {
@@ -161,14 +156,14 @@
         "signature": "8b7cfef894ebddb5a1c8c255b6e01c642513cfa8e9aa52d76bec59ad9eb052a9",
         "affectsGlobalScope": false
       },
-      "./src/app/router/router.ts": {
-        "version": "9916e695dcd623dc65333f311907efbffae3c8c765472b535f4d48788c229c3b",
-        "signature": "3f69a12ae29c2acc15c48937d236dc9638bf9aa9351e7b3fbd2ef686c58e1bad",
-        "affectsGlobalScope": false
-      },
       "./src/app/handle404/handle404.ts": {
         "version": "fd47f25d019da0588c16788285f6a825e5e7016c42508ed51d3d0a24700ec243",
         "signature": "18b2225ec77f5ef2cf96794279c047ae9358017225b6031207e39a18b2b8b396",
+        "affectsGlobalScope": false
+      },
+      "./src/app/router/router.ts": {
+        "version": "89dbea29198f7a79487ebf389be53224e9b17048121636beea8ed036f90aea1f",
+        "signature": "f390bbc5925cc0cd0ac355327af1b9e9aef2f5bb6814fa104c9ce1c6bbe88a21",
         "affectsGlobalScope": false
       },
       "./src/app/file/buffer.ts": {
@@ -182,13 +177,13 @@
         "affectsGlobalScope": false
       },
       "./src/app/file/file.ts": {
-        "version": "7ff4260c32d1e4a10e923c1f992bd02617046c732b67b7e56cce16d2c5e96dc0",
-        "signature": "cf6bb55d2e858c8cbf79cbad8d4000bbe2979273d1b7164468ad64742e2ca4fc",
+        "version": "abe73c0681931f205d689fefd10a187ee5358776aac1234b5598dcd6fdd9198f",
+        "signature": "f1eca3a6e63b22ccc12bc6b053c9d142ddbee1316030b46248f62194fc799b2d",
         "affectsGlobalScope": false
       },
       "./src/app/cookie&session/cookie.ts": {
-        "version": "9753706fc59e0fe2c288e1356facfab02d60a80b364b3814ebd6be7b7fe46f67",
-        "signature": "4332a33bff51cf5d637c08bd59c50257c42a62e938c0617982f279de71f95273",
+        "version": "ba1fe5a414a1f98bdb9d17f51b458078b6fd2d8594be3735df96379415134e63",
+        "signature": "e995d3d9b082d9acb91d2ad50a0028fab1d49be3f9ade89d941bf2efdf608739",
         "affectsGlobalScope": false
       },
       "./src/app/cookie&session/session.ts": {
@@ -206,9 +201,29 @@
         "signature": "82bc5f2de86e566dad6fe5c5f45522aef26ed73d6d5fc69729958582c9a727f3",
         "affectsGlobalScope": false
       },
+      "./src/app/datadb/mongodb/mongodb.ts": {
+        "version": "a65b83942662a5d741b2cdcb324af1ff8026d71d069dc35974835b621c931f13",
+        "signature": "2d510b3c47d15739c398e6f04b06f5d1620bec384aa65ce3f9723b3ba51b4529",
+        "affectsGlobalScope": false
+      },
+      "./src/app/datadb/data/user.ts": {
+        "version": "93704c89f90d8f586dbe3a15eddc147eb1dfeb903aacfc000f86936ca14bf059",
+        "signature": "7751d1464a9132001545ba4c3fa784ab1fd2359ee3e17187e2a76160a0e2b06c",
+        "affectsGlobalScope": false
+      },
+      "./src/app/datadb/data/index.ts": {
+        "version": "ac222441802f5244b5d6ecc8a0f0ecbde26e12178928b5faa2104a2e190251cf",
+        "signature": "53ad554ed65443a1ea2ff0be418fc879cf7c6d2ff73da66d104862b2e0c89183",
+        "affectsGlobalScope": false
+      },
+      "./src/app/datadb/dbstorage.ts": {
+        "version": "b0785c53e5ee2c0c310adf9288ab1a4873231df6605df1daa9653c7dc78d721d",
+        "signature": "1c99bf244bff9fb10c8a27a11a8e83fbc0d28006555cbe068c6d1971618064af",
+        "affectsGlobalScope": false
+      },
       "./src/app/index.ts": {
-        "version": "67e5de334216e5f1c8320977e1c35a77ac9d4580f313f153df6c794c01c7a817",
-        "signature": "67e5de334216e5f1c8320977e1c35a77ac9d4580f313f153df6c794c01c7a817",
+        "version": "3e9563971fd969803eb9ea967a0f6214ed0d8179c3a7a707df40e670890e879f",
+        "signature": "3e9563971fd969803eb9ea967a0f6214ed0d8179c3a7a707df40e670890e879f",
         "affectsGlobalScope": false
       },
       "./src/main.ts": {
@@ -711,6 +726,16 @@
       "./src/app/cookie&session/cookie.ts": [
         "./src/utils/utils.ts"
       ],
+      "./src/app/datadb/data/index.ts": [
+        "./src/app/datadb/data/user.ts"
+      ],
+      "./src/app/datadb/dbstorage.ts": [
+        "./src/app/datadb/data/index.ts",
+        "./src/app/datadb/mongodb/mongodb.ts"
+      ],
+      "./src/app/datadb/mongodb/mongodb.ts": [
+        "./src/model/model.ts"
+      ],
       "./src/app/file/file.ts": [
         "./src/app/file/buffer.ts",
         "./src/app/file/fileerror.ts"
@@ -720,11 +745,15 @@
         "./src/app/cookie&session/cookie-session.ts",
         "./src/app/cookie&session/cookie.ts",
         "./src/app/cookie&session/session.ts",
+        "./src/app/datadb/data/index.ts",
+        "./src/app/datadb/dbstorage.ts",
+        "./src/app/datadb/mongodb/mongodb.ts",
         "./src/app/file/file.ts",
         "./src/app/handle404/handle404.ts",
         "./src/app/router/router.ts"
       ],
       "./src/app/router/router.ts": [
+        "./src/app/handle404/handle404.ts",
         "./src/app/index.ts",
         "./src/app/router/routerhelper.ts"
       ],
@@ -963,11 +992,17 @@
         "./node_modules/_@types_node@14.14.41@@types/node/stream.d.ts",
         "./node_modules/_@types_node@14.14.41@@types/node/zlib.d.ts"
       ],
+      "./src/app/datadb/data/index.ts": [
+        "./src/app/datadb/data/user.ts"
+      ],
       "./src/app/index.ts": [
         "./src/app/cache/cache.ts",
         "./src/app/cookie&session/cookie-session.ts",
         "./src/app/cookie&session/cookie.ts",
         "./src/app/cookie&session/session.ts",
+        "./src/app/datadb/data/index.ts",
+        "./src/app/datadb/dbstorage.ts",
+        "./src/app/datadb/mongodb/mongodb.ts",
         "./src/app/file/file.ts",
         "./src/app/handle404/handle404.ts",
         "./src/app/router/router.ts"
@@ -1055,14 +1090,59 @@
       "./src/app/cookie&session/cookie-session.ts",
       "./src/app/cookie&session/cookie.ts",
       "./src/app/cookie&session/session.ts",
+      "./src/app/datadb/data/index.ts",
+      "./src/app/datadb/data/user.ts",
+      "./src/app/datadb/dbstorage.ts",
+      "./src/app/datadb/mongodb/mongodb.ts",
       "./src/app/file/buffer.ts",
-      "./src/app/file/file.ts",
+      [
+        "./src/app/file/file.ts",
+        [
+          {
+            "file": "./src/app/file/file.ts",
+            "start": 4163,
+            "length": 6,
+            "messageText": "Expected 2 arguments, but got 1.",
+            "category": 1,
+            "code": 2554,
+            "relatedInformation": [
+              {
+                "file": "./node_modules/_typescript@4.2.4@typescript/lib/lib.dom.d.ts",
+                "start": 498277,
+                "length": 18,
+                "messageText": "An argument for 'callback' was not provided.",
+                "category": 3,
+                "code": 6210
+              }
+            ]
+          }
+        ]
+      ],
       "./src/app/file/fileerror.ts",
       "./src/app/handle404/handle404.ts",
       "./src/app/index.ts",
-      "./src/app/router/router.ts",
+      [
+        "./src/app/router/router.ts",
+        [
+          {
+            "file": "./src/app/router/router.ts",
+            "start": 5988,
+            "length": 11,
+            "messageText": "Cannot find name 'queryString'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./src/app/router/router.ts",
+            "start": 6330,
+            "length": 11,
+            "messageText": "Cannot find name 'queryString'.",
+            "category": 1,
+            "code": 2304
+          }
+        ]
+      ],
       "./src/app/router/routerhelper.ts",
-      "./src/index.d.ts",
       "./src/main.ts",
       "./src/model/model.ts",
       "./src/utils/utils.ts"

@@ -1,14 +1,28 @@
 const mongodb = require('mongodb');
+const mongoose = require('mongoose');
 import {DBPORT, DBURL} from '../../../model/model';
+export type mongodbConfig = {
+    username: string;
+    password: string;
+    hostname: string;
+    port: string;
+}
 export class Mongodb {
-    private static server: any;
-    private static db: any;
-    private static dbName = 'myDb';
-    init() {
-        Mongodb.server = new mongodb.Server(DBURL, DBPORT, { auto_reconnect: true });
-        Mongodb.db = new mongodb.Db(Mongodb.dbName, Mongodb.server, {safe: true});
-        Mongodb.db.open((err: any, db: any) => {
+    private static dbUrl = DBURL;
 
-        })
+    static createMongoModel(schema: any, name: string) {
+        if (!Mongodb.dbUrl) {
+            throw new Error('db url is not config');
+        }
+        return mongoose.model(name,(new mongoose.Schema(schema)));
     }
+
+    static setUrl(config: mongodbConfig) {
+        Mongodb.dbUrl = 'mongodb://' +
+            config.username + ':' +
+            config.password + '@' +
+            config.hostname + ':' +
+            config.port + '/database';
+        mongoose.connect(Mongodb.dbUrl);
+    };
 }

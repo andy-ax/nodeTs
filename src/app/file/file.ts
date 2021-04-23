@@ -1,6 +1,7 @@
 const fs = require('fs');
 // import fs from 'node/fs';
 const buffer = require('buffer');
+const queryString = require('queryString');
 import {insertBuffer, array2Buffer} from './buffer'
 import {FileError} from './fileError';
 
@@ -127,6 +128,20 @@ export class File {
                         rej(err)
                     })
                 })
+        });
+    }
+
+    static getRequestData(req: Request) {
+        return new Promise((res, rej) => {
+            let str = '';
+            req.on('data', (chunk: string) => {
+                str += chunk;
+            });
+            req.on('end', () => {
+                const data = queryString.parse(str);
+                res(data);
+            });
+            req.on('')
         });
     }
 }

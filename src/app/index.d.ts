@@ -5,3 +5,6 @@ export * from './cookie&session/cookie';
 export * from './cookie&session/cookie-session';
 export * from './cookie&session/session';
 export * from './cache/cache';
+export * from './dataDb/mongodb/mongodb';
+export * from './dataDb/data';
+export * from './dataDb/dbStorage';

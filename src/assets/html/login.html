@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+<div>
+    <span>用户名</span>
+    <input id="user_name" />
+</div>
+<div>
+    <span>密码</span>
+    <input id="password" type="password" />
+</div>
+<div>
+    <button id="login">登录</button>
+    <button id="register">注册</button>
+</div>
+</body>
+<script>
+    $('#login').on('click', () => {
+        const name = $('#user_name').val();
+        const password = $('#password').val();
+        $.post('/login', {
+            name,
+            password,
+        }, (data) => {
+            debugger
+        });
+    });
+    $('#register').on('click', () => {
+        const name = $('#user_name').val();
+        const password = $('#password').val();
+        $.post('/register', {
+            name,
+            password,
+        }, (data) => {
+            debugger
+        });
+    });
+</script>
+</html>

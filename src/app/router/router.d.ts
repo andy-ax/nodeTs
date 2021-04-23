@@ -3,4 +3,5 @@ export declare class Router extends RouterHelper {
     constructor();
     addRouteReg(): void;
     getRouter(): void;
+    postRouter(): void;
 }

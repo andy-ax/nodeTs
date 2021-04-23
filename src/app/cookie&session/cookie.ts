@@ -3,12 +3,12 @@ const queryString = require('querystring');
 
 type Option = {
     maxAge: number;
-    domain: string;
-    path: string;
+    domain?: string;
+    path?: string;
     expires?: {
         toUTCString: () => string;
     };
-    httpOnly: any;
+    httpOnly?: any;
     secure?: any;
 };
 
