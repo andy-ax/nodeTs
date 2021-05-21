@@ -162,7 +162,7 @@
         "affectsGlobalScope": false
       },
       "./src/app/router/router.ts": {
-        "version": "89dbea29198f7a79487ebf389be53224e9b17048121636beea8ed036f90aea1f",
+        "version": "b1a167f488640b39bdbd1d8b38c58152863a0abe7a40d9ebb1cdcdab5297fca1",
         "signature": "f390bbc5925cc0cd0ac355327af1b9e9aef2f5bb6814fa104c9ce1c6bbe88a21",
         "affectsGlobalScope": false
       },
@@ -177,7 +177,7 @@
         "affectsGlobalScope": false
       },
       "./src/app/file/file.ts": {
-        "version": "abe73c0681931f205d689fefd10a187ee5358776aac1234b5598dcd6fdd9198f",
+        "version": "af40e21e20fada71b7dd590ef188cc9b84630f34573e408b0805ffaf6ea8122c",
         "signature": "f1eca3a6e63b22ccc12bc6b053c9d142ddbee1316030b46248f62194fc799b2d",
         "affectsGlobalScope": false
       },
@@ -202,8 +202,8 @@
         "affectsGlobalScope": false
       },
       "./src/app/datadb/mongodb/mongodb.ts": {
-        "version": "a65b83942662a5d741b2cdcb324af1ff8026d71d069dc35974835b621c931f13",
-        "signature": "2d510b3c47d15739c398e6f04b06f5d1620bec384aa65ce3f9723b3ba51b4529",
+        "version": "a7f1e0cc07550e61b0809cd94736d73c8373288f4e829dacddac55c69d94efc6",
+        "signature": "42aba98ccdf32051b08bbee35fbcdbd2deff84cfb50c37156d59602419815575",
         "affectsGlobalScope": false
       },
       "./src/app/datadb/data/user.ts": {
@@ -217,8 +217,8 @@
         "affectsGlobalScope": false
       },
       "./src/app/datadb/dbstorage.ts": {
-        "version": "b0785c53e5ee2c0c310adf9288ab1a4873231df6605df1daa9653c7dc78d721d",
-        "signature": "1c99bf244bff9fb10c8a27a11a8e83fbc0d28006555cbe068c6d1971618064af",
+        "version": "921c07dc7fc3dff1988f6977e50a6556cdd617a4c1f8ade3778e1fe292108c9a",
+        "signature": "a7bfba38fcee5105badc4e1bbf64f7e17a54308a5a67d48f509e303c253c16cf",
         "affectsGlobalScope": false
       },
       "./src/app/index.ts": {
@@ -1095,53 +1095,11 @@
       "./src/app/datadb/dbstorage.ts",
       "./src/app/datadb/mongodb/mongodb.ts",
       "./src/app/file/buffer.ts",
-      [
-        "./src/app/file/file.ts",
-        [
-          {
-            "file": "./src/app/file/file.ts",
-            "start": 4163,
-            "length": 6,
-            "messageText": "Expected 2 arguments, but got 1.",
-            "category": 1,
-            "code": 2554,
-            "relatedInformation": [
-              {
-                "file": "./node_modules/_typescript@4.2.4@typescript/lib/lib.dom.d.ts",
-                "start": 498277,
-                "length": 18,
-                "messageText": "An argument for 'callback' was not provided.",
-                "category": 3,
-                "code": 6210
-              }
-            ]
-          }
-        ]
-      ],
+      "./src/app/file/file.ts",
       "./src/app/file/fileerror.ts",
       "./src/app/handle404/handle404.ts",
       "./src/app/index.ts",
-      [
-        "./src/app/router/router.ts",
-        [
-          {
-            "file": "./src/app/router/router.ts",
-            "start": 5988,
-            "length": 11,
-            "messageText": "Cannot find name 'queryString'.",
-            "category": 1,
-            "code": 2304
-          },
-          {
-            "file": "./src/app/router/router.ts",
-            "start": 6330,
-            "length": 11,
-            "messageText": "Cannot find name 'queryString'.",
-            "category": 1,
-            "code": 2304
-          }
-        ]
-      ],
+      "./src/app/router/router.ts",
       "./src/app/router/routerhelper.ts",
       "./src/main.ts",
       "./src/model/model.ts",

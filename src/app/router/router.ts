@@ -151,22 +151,18 @@ export class Router extends RouterHelper{
     postRouter() {
         this.post('/login', function (req: Request, res: Response) {
             let str = '';
-            req.on('data', (chunk: string) => {
-                str += chunk;
-            });
-            req.on('end', () => {
-                const data = queryString.parse(str);
-                debugger
+            File.getRequestData(req).then((data: any) => {
+                if (data.name && data.password) {
+
+                }
             });
         });
         this.post('/register', function (req: Request, res: Response) {
-            let str = '';
-            req.on('data', (chunk: string) => {
-                str += chunk;
-            });
-            req.on('end', () => {
-                const data = queryString.parse(str);
-                debugger
+            File.getRequestData(req).then((data: any) => {
+                if (data.name && data.password) {
+                    const user = DbStorage.users;
+                    debugger
+                }
             });
         });
     }

@@ -134,7 +134,9 @@ class File {
                 const data = queryString.parse(str);
                 res(data);
             });
-            req.on('');
+            req.on('error', (err) => {
+                rej(err);
+            });
         });
     }
 }

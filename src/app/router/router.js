@@ -147,22 +147,17 @@ class Router extends routerHelper_1.RouterHelper {
     postRouter() {
         this.post('/login', function (req, res) {
             let str = '';
-            req.on('data', (chunk) => {
-                str += chunk;
-            });
-            req.on('end', () => {
-                const data = queryString.parse(str);
-                debugger;
+            __1.File.getRequestData(req).then((data) => {
+                if (data.name && data.password) {
+                }
             });
         });
         this.post('/register', function (req, res) {
-            let str = '';
-            req.on('data', (chunk) => {
-                str += chunk;
-            });
-            req.on('end', () => {
-                const data = queryString.parse(str);
-                debugger;
+            __1.File.getRequestData(req).then((data) => {
+                if (data.name && data.password) {
+                    const user = __1.DbStorage.users;
+                    debugger;
+                }
             });
         });
     }

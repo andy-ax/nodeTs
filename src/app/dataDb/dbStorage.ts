@@ -4,7 +4,10 @@ import {User, user, userType} from "./data";
 const mongo = Mongodb;
 export class DbStorage {
     static users: any;
+    private static mongo: any;
     static init() {
+        this.mongo = new Mongodb();
+        this.mongo.connect();
         this.user();
     }
     static user() {
@@ -12,3 +15,4 @@ export class DbStorage {
         this.users._init = User;
     }
 }
+DbStorage.init();

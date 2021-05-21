@@ -6,6 +6,8 @@ const data_1 = require("./data");
 const mongo = mongodb_1.Mongodb;
 class DbStorage {
     static init() {
+        this.mongo = new mongodb_1.Mongodb();
+        this.mongo.connect();
         this.user();
     }
     static user() {
@@ -14,4 +16,5 @@ class DbStorage {
     }
 }
 exports.DbStorage = DbStorage;
+DbStorage.init();
 //# sourceMappingURL=dbStorage.js.map
